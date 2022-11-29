@@ -1,5 +1,5 @@
 Analysis & Synthesis report for multiplicador_combinacional_64bits
-Mon Nov 28 22:36:07 2022
+Tue Nov 29 16:45:41 2022
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -10,7 +10,29 @@ Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis DSP Block Usage Summary
+  9. Analysis & Synthesis IP Cores Summary
+ 10. General Register Statistics
+ 11. Parameter Settings for User Entity Instance: lpm_add_sub0:inst1|lpm_add_sub:LPM_ADD_SUB_component
+ 12. Parameter Settings for User Entity Instance: LPM_OR:inst22
+ 13. Parameter Settings for User Entity Instance: LPM_OR:inst23
+ 14. Parameter Settings for User Entity Instance: lpm_mux2:inst6|lpm_mux:LPM_MUX_component
+ 15. Parameter Settings for User Entity Instance: lpm_mux11:inst5|lpm_mux:LPM_MUX_component
+ 16. Parameter Settings for User Entity Instance: lpm_add_sub1:inst2|lpm_add_sub:LPM_ADD_SUB_component
+ 17. Parameter Settings for User Entity Instance: lpm_mux0:inst13|lpm_mux:LPM_MUX_component
+ 18. Parameter Settings for User Entity Instance: lpm_mult0:inst28|lpm_mult:lpm_mult_component
+ 19. Parameter Settings for User Entity Instance: lpm_constant0:inst30|lpm_constant:LPM_CONSTANT_component
+ 20. Parameter Settings for User Entity Instance: lpm_constant2:inst29|lpm_constant:LPM_CONSTANT_component
+ 21. Parameter Settings for User Entity Instance: lpm_constant11:inst31|lpm_constant:LPM_CONSTANT_component
+ 22. Parameter Settings for User Entity Instance: lpm_mux3:inst25|lpm_mux:LPM_MUX_component
+ 23. Parameter Settings for User Entity Instance: lpm_mux1:inst18|lpm_mux:LPM_MUX_component
+ 24. lpm_mult Parameter Settings by Entity Instance
+ 25. Post-Synthesis Netlist Statistics for Top Partition
+ 26. Elapsed Time Per Partition
+ 27. Analysis & Synthesis Messages
 
 
 
@@ -37,20 +59,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Mon Nov 28 22:36:07 2022           ;
+; Analysis & Synthesis Status        ; Successful - Tue Nov 29 16:45:41 2022       ;
 ; Quartus Prime Version              ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                      ; multiplicador_combinacional_64bits          ;
 ; Top-level Entity Name              ; multiplicador_combinacional_64bits          ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 382                                         ;
+;     Total combinational functions  ; 382                                         ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 194                                         ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 18                                          ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -149,11 +171,481 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 5           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
 +----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                             ;
++----------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path       ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                             ; Library ;
++----------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------+---------+
+; multiplicador_combinacional_64bits.bdf ; yes             ; User Block Diagram/Schematic File  ; /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/multiplicador_combinacional_64bits.bdf ;         ;
+; lpm_add_sub0.v                         ; yes             ; User Wizard-Generated File         ; /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_add_sub0.v                         ;         ;
+; lpm_add_sub1.v                         ; yes             ; User Wizard-Generated File         ; /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_add_sub1.v                         ;         ;
+; lpm_mux11.v                            ; yes             ; User Wizard-Generated File         ; /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_mux11.v                            ;         ;
+; lpm_mux2.v                             ; yes             ; User Wizard-Generated File         ; /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_mux2.v                             ;         ;
+; lpm_mux0.v                             ; yes             ; User Wizard-Generated File         ; /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_mux0.v                             ;         ;
+; lpm_mux1.v                             ; yes             ; User Wizard-Generated File         ; /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_mux1.v                             ;         ;
+; lpm_mux3.v                             ; yes             ; User Wizard-Generated File         ; /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_mux3.v                             ;         ;
+; lpm_mult0.v                            ; yes             ; User Wizard-Generated File         ; /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_mult0.v                            ;         ;
+; lpm_constant2.v                        ; yes             ; User Wizard-Generated File         ; /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_constant2.v                        ;         ;
+; lpm_constant0.v                        ; yes             ; User Wizard-Generated File         ; /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_constant0.v                        ;         ;
+; lpm_constant11.v                       ; yes             ; User Wizard-Generated File         ; /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_constant11.v                       ;         ;
+; lpm_constant3.v                        ; yes             ; User Wizard-Generated File         ; /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_constant3.v                        ;         ;
+; lpm_add_sub.tdf                        ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/lpm_add_sub.tdf                                      ;         ;
+; addcore.inc                            ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/addcore.inc                                          ;         ;
+; look_add.inc                           ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/look_add.inc                                         ;         ;
+; bypassff.inc                           ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/bypassff.inc                                         ;         ;
+; altshift.inc                           ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/altshift.inc                                         ;         ;
+; alt_stratix_add_sub.inc                ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/alt_stratix_add_sub.inc                              ;         ;
+; aglobal211.inc                         ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/aglobal211.inc                                       ;         ;
+; db/add_sub_39i.tdf                     ; yes             ; Auto-Generated Megafunction        ; /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/db/add_sub_39i.tdf                     ;         ;
+; lpm_or.tdf                             ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/lpm_or.tdf                                           ;         ;
+; lpm_mux.tdf                            ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/lpm_mux.tdf                                          ;         ;
+; muxlut.inc                             ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/muxlut.inc                                           ;         ;
+; db/mux_osc.tdf                         ; yes             ; Auto-Generated Megafunction        ; /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/db/mux_osc.tdf                         ;         ;
+; db/add_sub_arh.tdf                     ; yes             ; Auto-Generated Megafunction        ; /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/db/add_sub_arh.tdf                     ;         ;
+; db/mux_psc.tdf                         ; yes             ; Auto-Generated Megafunction        ; /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/db/mux_psc.tdf                         ;         ;
+; lpm_mult.tdf                           ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/lpm_mult.tdf                                         ;         ;
+; lpm_add_sub.inc                        ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/lpm_add_sub.inc                                      ;         ;
+; multcore.inc                           ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/multcore.inc                                         ;         ;
+; db/mult_chn.tdf                        ; yes             ; Auto-Generated Megafunction        ; /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/db/mult_chn.tdf                        ;         ;
+; lpm_constant.tdf                       ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/lpm_constant.tdf                                     ;         ;
+; db/mux_tsc.tdf                         ; yes             ; Auto-Generated Megafunction        ; /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/db/mux_tsc.tdf                         ;         ;
++----------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                                 ;
++---------------------------------------------+-------------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                         ;
++---------------------------------------------+-------------------------------------------------------------------------------+
+; Estimated Total logic elements              ; 382                                                                           ;
+;                                             ;                                                                               ;
+; Total combinational functions               ; 382                                                                           ;
+; Logic element usage by number of LUT inputs ;                                                                               ;
+;     -- 4 input functions                    ; 93                                                                            ;
+;     -- 3 input functions                    ; 230                                                                           ;
+;     -- <=2 input functions                  ; 59                                                                            ;
+;                                             ;                                                                               ;
+; Logic elements by mode                      ;                                                                               ;
+;     -- normal mode                          ; 114                                                                           ;
+;     -- arithmetic mode                      ; 268                                                                           ;
+;                                             ;                                                                               ;
+; Total registers                             ; 0                                                                             ;
+;     -- Dedicated logic registers            ; 0                                                                             ;
+;     -- I/O registers                        ; 0                                                                             ;
+;                                             ;                                                                               ;
+; I/O pins                                    ; 194                                                                           ;
+;                                             ;                                                                               ;
+; Embedded Multiplier 9-bit elements          ; 18                                                                            ;
+;                                             ;                                                                               ;
+; Maximum fan-out node                        ; lpm_mult0:inst28|lpm_mult:lpm_mult_component|mult_chn:auto_generated|op_2~174 ;
+; Maximum fan-out                             ; 53                                                                            ;
+; Total fan-out                               ; 1751                                                                          ;
+; Average fan-out                             ; 2.22                                                                          ;
++---------------------------------------------+-------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                            ;
++-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+------------------------------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                 ; Entity Name                        ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+------------------------------------+--------------+
+; |multiplicador_combinacional_64bits       ; 382 (3)             ; 0 (0)                     ; 0           ; 18           ; 0       ; 9         ; 194  ; 0            ; |multiplicador_combinacional_64bits                                                                                 ; multiplicador_combinacional_64bits ; work         ;
+;    |lpm_add_sub0:inst1|                   ; 12 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplicador_combinacional_64bits|lpm_add_sub0:inst1                                                              ; lpm_add_sub0                       ; work         ;
+;       |lpm_add_sub:LPM_ADD_SUB_component| ; 12 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplicador_combinacional_64bits|lpm_add_sub0:inst1|lpm_add_sub:LPM_ADD_SUB_component                            ; lpm_add_sub                        ; work         ;
+;          |add_sub_39i:auto_generated|     ; 12 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplicador_combinacional_64bits|lpm_add_sub0:inst1|lpm_add_sub:LPM_ADD_SUB_component|add_sub_39i:auto_generated ; add_sub_39i                        ; work         ;
+;    |lpm_add_sub1:inst2|                   ; 22 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplicador_combinacional_64bits|lpm_add_sub1:inst2                                                              ; lpm_add_sub1                       ; work         ;
+;       |lpm_add_sub:LPM_ADD_SUB_component| ; 22 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplicador_combinacional_64bits|lpm_add_sub1:inst2|lpm_add_sub:LPM_ADD_SUB_component                            ; lpm_add_sub                        ; work         ;
+;          |add_sub_arh:auto_generated|     ; 22 (22)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplicador_combinacional_64bits|lpm_add_sub1:inst2|lpm_add_sub:LPM_ADD_SUB_component|add_sub_arh:auto_generated ; add_sub_arh                        ; work         ;
+;    |lpm_mult0:inst28|                     ; 251 (0)             ; 0 (0)                     ; 0           ; 18           ; 0       ; 9         ; 0    ; 0            ; |multiplicador_combinacional_64bits|lpm_mult0:inst28                                                                ; lpm_mult0                          ; work         ;
+;       |lpm_mult:lpm_mult_component|       ; 251 (0)             ; 0 (0)                     ; 0           ; 18           ; 0       ; 9         ; 0    ; 0            ; |multiplicador_combinacional_64bits|lpm_mult0:inst28|lpm_mult:lpm_mult_component                                    ; lpm_mult                           ; work         ;
+;          |mult_chn:auto_generated|        ; 251 (251)           ; 0 (0)                     ; 0           ; 18           ; 0       ; 9         ; 0    ; 0            ; |multiplicador_combinacional_64bits|lpm_mult0:inst28|lpm_mult:lpm_mult_component|mult_chn:auto_generated            ; mult_chn                           ; work         ;
+;    |lpm_mux3:inst25|                      ; 53 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplicador_combinacional_64bits|lpm_mux3:inst25                                                                 ; lpm_mux3                           ; work         ;
+;       |lpm_mux:LPM_MUX_component|         ; 53 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplicador_combinacional_64bits|lpm_mux3:inst25|lpm_mux:LPM_MUX_component                                       ; lpm_mux                            ; work         ;
+;          |mux_tsc:auto_generated|         ; 53 (53)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplicador_combinacional_64bits|lpm_mux3:inst25|lpm_mux:LPM_MUX_component|mux_tsc:auto_generated                ; mux_tsc                            ; work         ;
+;    |lpm_or:inst22|                        ; 21 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplicador_combinacional_64bits|lpm_or:inst22                                                                   ; lpm_or                             ; work         ;
+;    |lpm_or:inst23|                        ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplicador_combinacional_64bits|lpm_or:inst23                                                                   ; lpm_or                             ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary        ;
++---------------------------------------+-------------+
+; Statistic                             ; Number Used ;
++---------------------------------------+-------------+
+; Simple Multipliers (9-bit)            ; 0           ;
+; Simple Multipliers (18-bit)           ; 9           ;
+; Embedded Multiplier Blocks            ; --          ;
+; Embedded Multiplier 9-bit elements    ; 18          ;
+; Signed Embedded Multipliers           ; 0           ;
+; Unsigned Embedded Multipliers         ; 9           ;
+; Mixed Sign Embedded Multipliers       ; 0           ;
+; Variable Sign Embedded Multipliers    ; 0           ;
+; Dedicated Input Shift Register Chains ; 0           ;
++---------------------------------------+-------------+
+Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                        ;
++--------+--------------+---------+--------------+--------------+-----------------------------------------------------------+------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                           ; IP Include File  ;
++--------+--------------+---------+--------------+--------------+-----------------------------------------------------------+------------------+
+; Altera ; LPM_ADD_SUB  ; 21.1    ; N/A          ; N/A          ; |multiplicador_combinacional_64bits|lpm_add_sub0:inst1    ; lpm_add_sub0.v   ;
+; Altera ; LPM_ADD_SUB  ; 21.1    ; N/A          ; N/A          ; |multiplicador_combinacional_64bits|lpm_add_sub1:inst2    ; lpm_add_sub1.v   ;
+; Altera ; LPM_MUX      ; 21.1    ; N/A          ; N/A          ; |multiplicador_combinacional_64bits|lpm_mux11:inst5       ; lpm_mux11.v      ;
+; Altera ; LPM_MUX      ; 21.1    ; N/A          ; N/A          ; |multiplicador_combinacional_64bits|lpm_mux2:inst6        ; lpm_mux2.v       ;
+; Altera ; LPM_MUX      ; 21.1    ; N/A          ; N/A          ; |multiplicador_combinacional_64bits|lpm_mux0:inst13       ; lpm_mux0.v       ;
+; Altera ; LPM_MUX      ; 21.1    ; N/A          ; N/A          ; |multiplicador_combinacional_64bits|lpm_mux1:inst18       ; lpm_mux1.v       ;
+; Altera ; LPM_MUX      ; 21.1    ; N/A          ; N/A          ; |multiplicador_combinacional_64bits|lpm_mux3:inst25       ; lpm_mux3.v       ;
+; Altera ; LPM_MULT     ; 21.1    ; N/A          ; N/A          ; |multiplicador_combinacional_64bits|lpm_mult0:inst28      ; lpm_mult0.v      ;
+; Altera ; LPM_CONSTANT ; 21.1    ; N/A          ; N/A          ; |multiplicador_combinacional_64bits|lpm_constant2:inst29  ; lpm_constant2.v  ;
+; Altera ; LPM_CONSTANT ; 21.1    ; N/A          ; N/A          ; |multiplicador_combinacional_64bits|lpm_constant0:inst30  ; lpm_constant0.v  ;
+; Altera ; LPM_CONSTANT ; 21.1    ; N/A          ; N/A          ; |multiplicador_combinacional_64bits|lpm_constant11:inst31 ; lpm_constant11.v ;
+; Altera ; LPM_CONSTANT ; 21.1    ; N/A          ; N/A          ; |multiplicador_combinacional_64bits|lpm_constant3:inst32  ; lpm_constant3.v  ;
++--------+--------------+---------+--------------+--------------+-----------------------------------------------------------+------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_add_sub0:inst1|lpm_add_sub:LPM_ADD_SUB_component ;
++------------------------+--------------+-----------------------------------------------------------+
+; Parameter Name         ; Value        ; Type                                                      ;
++------------------------+--------------+-----------------------------------------------------------+
+; LPM_WIDTH              ; 11           ; Signed Integer                                            ;
+; LPM_REPRESENTATION     ; UNSIGNED     ; Untyped                                                   ;
+; LPM_DIRECTION          ; ADD          ; Untyped                                                   ;
+; ONE_INPUT_IS_CONSTANT  ; NO           ; Untyped                                                   ;
+; LPM_PIPELINE           ; 0            ; Untyped                                                   ;
+; MAXIMIZE_SPEED         ; 5            ; Untyped                                                   ;
+; REGISTERED_AT_END      ; 0            ; Untyped                                                   ;
+; OPTIMIZE_FOR_SPEED     ; 5            ; Untyped                                                   ;
+; USE_CS_BUFFERS         ; 1            ; Untyped                                                   ;
+; CARRY_CHAIN            ; MANUAL       ; Untyped                                                   ;
+; CARRY_CHAIN_LENGTH     ; 48           ; CARRY_CHAIN_LENGTH                                        ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                                   ;
+; USE_WYS                ; OFF          ; Untyped                                                   ;
+; STYLE                  ; FAST         ; Untyped                                                   ;
+; CBXI_PARAMETER         ; add_sub_39i  ; Untyped                                                   ;
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                                ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                              ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                              ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                            ;
++------------------------+--------------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_OR:inst22 ;
++------------------------+--------------+--------------------+
+; Parameter Name         ; Value        ; Type               ;
++------------------------+--------------+--------------------+
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY         ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY       ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE       ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE     ;
+; LPM_WIDTH              ; 1            ; Untyped            ;
+; LPM_SIZE               ; 63           ; Untyped            ;
+; CARRY_CHAIN_LENGTH     ; 48           ; CARRY_CHAIN_LENGTH ;
+; CARRY_CHAIN            ; MANUAL       ; Untyped            ;
+; CASCADE_CHAIN          ; MANUAL       ; Untyped            ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped            ;
++------------------------+--------------+--------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_OR:inst23 ;
++------------------------+--------------+--------------------+
+; Parameter Name         ; Value        ; Type               ;
++------------------------+--------------+--------------------+
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY         ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY       ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE       ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE     ;
+; LPM_WIDTH              ; 1            ; Untyped            ;
+; LPM_SIZE               ; 63           ; Untyped            ;
+; CARRY_CHAIN_LENGTH     ; 48           ; CARRY_CHAIN_LENGTH ;
+; CARRY_CHAIN            ; MANUAL       ; Untyped            ;
+; CASCADE_CHAIN          ; MANUAL       ; Untyped            ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped            ;
++------------------------+--------------+--------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_mux2:inst6|lpm_mux:LPM_MUX_component ;
++------------------------+--------------+-----------------------------------------------+
+; Parameter Name         ; Value        ; Type                                          ;
++------------------------+--------------+-----------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                    ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                  ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                  ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                ;
+; LPM_WIDTH              ; 11           ; Signed Integer                                ;
+; LPM_SIZE               ; 2            ; Signed Integer                                ;
+; LPM_WIDTHS             ; 1            ; Signed Integer                                ;
+; LPM_PIPELINE           ; 0            ; Untyped                                       ;
+; CBXI_PARAMETER         ; mux_osc      ; Untyped                                       ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                       ;
++------------------------+--------------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_mux11:inst5|lpm_mux:LPM_MUX_component ;
++------------------------+--------------+------------------------------------------------+
+; Parameter Name         ; Value        ; Type                                           ;
++------------------------+--------------+------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                   ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                 ;
+; LPM_WIDTH              ; 11           ; Signed Integer                                 ;
+; LPM_SIZE               ; 2            ; Signed Integer                                 ;
+; LPM_WIDTHS             ; 1            ; Signed Integer                                 ;
+; LPM_PIPELINE           ; 0            ; Untyped                                        ;
+; CBXI_PARAMETER         ; mux_osc      ; Untyped                                        ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                        ;
++------------------------+--------------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_add_sub1:inst2|lpm_add_sub:LPM_ADD_SUB_component ;
++------------------------+--------------+-----------------------------------------------------------+
+; Parameter Name         ; Value        ; Type                                                      ;
++------------------------+--------------+-----------------------------------------------------------+
+; LPM_WIDTH              ; 12           ; Signed Integer                                            ;
+; LPM_REPRESENTATION     ; UNSIGNED     ; Untyped                                                   ;
+; LPM_DIRECTION          ; SUB          ; Untyped                                                   ;
+; ONE_INPUT_IS_CONSTANT  ; NO           ; Untyped                                                   ;
+; LPM_PIPELINE           ; 0            ; Untyped                                                   ;
+; MAXIMIZE_SPEED         ; 5            ; Untyped                                                   ;
+; REGISTERED_AT_END      ; 0            ; Untyped                                                   ;
+; OPTIMIZE_FOR_SPEED     ; 5            ; Untyped                                                   ;
+; USE_CS_BUFFERS         ; 1            ; Untyped                                                   ;
+; CARRY_CHAIN            ; MANUAL       ; Untyped                                                   ;
+; CARRY_CHAIN_LENGTH     ; 48           ; CARRY_CHAIN_LENGTH                                        ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                                   ;
+; USE_WYS                ; OFF          ; Untyped                                                   ;
+; STYLE                  ; FAST         ; Untyped                                                   ;
+; CBXI_PARAMETER         ; add_sub_arh  ; Untyped                                                   ;
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                                ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                              ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                              ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                            ;
++------------------------+--------------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_mux0:inst13|lpm_mux:LPM_MUX_component ;
++------------------------+--------------+------------------------------------------------+
+; Parameter Name         ; Value        ; Type                                           ;
++------------------------+--------------+------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                   ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                 ;
+; LPM_WIDTH              ; 12           ; Signed Integer                                 ;
+; LPM_SIZE               ; 2            ; Signed Integer                                 ;
+; LPM_WIDTHS             ; 1            ; Signed Integer                                 ;
+; LPM_PIPELINE           ; 0            ; Untyped                                        ;
+; CBXI_PARAMETER         ; mux_psc      ; Untyped                                        ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                        ;
++------------------------+--------------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_mult0:inst28|lpm_mult:lpm_mult_component ;
++------------------------------------------------+--------------+---------------------------+
+; Parameter Name                                 ; Value        ; Type                      ;
++------------------------------------------------+--------------+---------------------------+
+; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY                ;
+; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY              ;
+; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE              ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE            ;
+; LPM_WIDTHA                                     ; 53           ; Signed Integer            ;
+; LPM_WIDTHB                                     ; 53           ; Signed Integer            ;
+; LPM_WIDTHP                                     ; 106          ; Signed Integer            ;
+; LPM_WIDTHR                                     ; 0            ; Untyped                   ;
+; LPM_WIDTHS                                     ; 1            ; Untyped                   ;
+; LPM_REPRESENTATION                             ; UNSIGNED     ; Untyped                   ;
+; LPM_PIPELINE                                   ; 0            ; Untyped                   ;
+; LATENCY                                        ; 0            ; Untyped                   ;
+; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped                   ;
+; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped                   ;
+; USE_EAB                                        ; OFF          ; Untyped                   ;
+; MAXIMIZE_SPEED                                 ; 5            ; Untyped                   ;
+; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped                   ;
+; CARRY_CHAIN                                    ; MANUAL       ; Untyped                   ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K       ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped                   ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped                   ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped                   ;
+; CBXI_PARAMETER                                 ; mult_chn     ; Untyped                   ;
+; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped                   ;
+; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped                   ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped                   ;
++------------------------------------------------+--------------+---------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_constant0:inst30|lpm_constant:LPM_CONSTANT_component ;
++--------------------+------------------+---------------------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                          ;
++--------------------+------------------+---------------------------------------------------------------+
+; LPM_WIDTH          ; 12               ; Signed Integer                                                ;
+; LPM_CVALUE         ; 1023             ; Signed Integer                                                ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                                       ;
+; CBXI_PARAMETER     ; lpm_constant_4m6 ; Untyped                                                       ;
++--------------------+------------------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_constant2:inst29|lpm_constant:LPM_CONSTANT_component ;
++--------------------+------------------+---------------------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                          ;
++--------------------+------------------+---------------------------------------------------------------+
+; LPM_WIDTH          ; 12               ; Signed Integer                                                ;
+; LPM_CVALUE         ; 1022             ; Signed Integer                                                ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                                       ;
+; CBXI_PARAMETER     ; lpm_constant_3m6 ; Untyped                                                       ;
++--------------------+------------------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_constant11:inst31|lpm_constant:LPM_CONSTANT_component ;
++--------------------+------------------+----------------------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                           ;
++--------------------+------------------+----------------------------------------------------------------+
+; LPM_WIDTH          ; 11               ; Signed Integer                                                 ;
+; LPM_CVALUE         ; 2047             ; Signed Integer                                                 ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                                        ;
+; CBXI_PARAMETER     ; lpm_constant_7m6 ; Untyped                                                        ;
++--------------------+------------------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_mux3:inst25|lpm_mux:LPM_MUX_component ;
++------------------------+--------------+------------------------------------------------+
+; Parameter Name         ; Value        ; Type                                           ;
++------------------------+--------------+------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                   ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                 ;
+; LPM_WIDTH              ; 52           ; Signed Integer                                 ;
+; LPM_SIZE               ; 2            ; Signed Integer                                 ;
+; LPM_WIDTHS             ; 1            ; Signed Integer                                 ;
+; LPM_PIPELINE           ; 0            ; Untyped                                        ;
+; CBXI_PARAMETER         ; mux_tsc      ; Untyped                                        ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                        ;
++------------------------+--------------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_mux1:inst18|lpm_mux:LPM_MUX_component ;
++------------------------+--------------+------------------------------------------------+
+; Parameter Name         ; Value        ; Type                                           ;
++------------------------+--------------+------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                   ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                 ;
+; LPM_WIDTH              ; 52           ; Signed Integer                                 ;
+; LPM_SIZE               ; 2            ; Signed Integer                                 ;
+; LPM_WIDTHS             ; 1            ; Signed Integer                                 ;
+; LPM_PIPELINE           ; 0            ; Untyped                                        ;
+; CBXI_PARAMETER         ; mux_tsc      ; Untyped                                        ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                        ;
++------------------------+--------------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                                       ;
++---------------------------------------+----------------------------------------------+
+; Name                                  ; Value                                        ;
++---------------------------------------+----------------------------------------------+
+; Number of entity instances            ; 1                                            ;
+; Entity Instance                       ; lpm_mult0:inst28|lpm_mult:lpm_mult_component ;
+;     -- LPM_WIDTHA                     ; 53                                           ;
+;     -- LPM_WIDTHB                     ; 53                                           ;
+;     -- LPM_WIDTHP                     ; 106                                          ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                                     ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                           ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                           ;
+;     -- USE_EAB                        ; OFF                                          ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                         ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                           ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                           ;
++---------------------------------------+----------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 194                         ;
+; cycloneiii_lcell_comb ; 383                         ;
+;     arith             ; 268                         ;
+;         2 data inputs ; 41                          ;
+;         3 data inputs ; 227                         ;
+;     normal            ; 115                         ;
+;         0 data inputs ; 4                           ;
+;         1 data inputs ; 3                           ;
+;         2 data inputs ; 12                          ;
+;         3 data inputs ; 3                           ;
+;         4 data inputs ; 93                          ;
+; cycloneiii_mac_mult   ; 9                           ;
+; cycloneiii_mac_out    ; 9                           ;
+;                       ;                             ;
+; Max LUT depth         ; 13.70                       ;
+; Average LUT depth     ; 8.11                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -162,28 +654,155 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
-    Info: Processing started: Mon Nov 28 22:36:02 2022
+    Info: Processing started: Tue Nov 29 16:45:34 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off multiplicador_combinacional_64bits -c multiplicador_combinacional_64bits
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file multiplicador_combinacional_64bits.bdf
     Info (12023): Found entity 1: multiplicador_combinacional_64bits
+Info (12021): Found 1 design units, including 1 entities, in source file lpm_add_sub0.v
+    Info (12023): Found entity 1: lpm_add_sub0 File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_add_sub0.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file lpm_add_sub1.v
+    Info (12023): Found entity 1: lpm_add_sub1 File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_add_sub1.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file lpm_mux11.v
+    Info (12023): Found entity 1: lpm_mux11 File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_mux11.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file lpm_mux2.v
+    Info (12023): Found entity 1: lpm_mux2 File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_mux2.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file lpm_mux0.v
+    Info (12023): Found entity 1: lpm_mux0 File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_mux0.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file lpm_mux1.v
+    Info (12023): Found entity 1: lpm_mux1 File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_mux1.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file lpm_mux3.v
+    Info (12023): Found entity 1: lpm_mux3 File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_mux3.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file lpm_mult0.v
+    Info (12023): Found entity 1: lpm_mult0 File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_mult0.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file lpm_constant2.v
+    Info (12023): Found entity 1: lpm_constant2 File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_constant2.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file lpm_constant0.v
+    Info (12023): Found entity 1: lpm_constant0 File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_constant0.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file lpm_constant11.v
+    Info (12023): Found entity 1: lpm_constant11 File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_constant11.v Line: 40
+Info (12021): Found 2 design units, including 2 entities, in source file lpm_constant3.v
+    Info (12023): Found entity 1: lpm_constant3_lpm_constant_d89 File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_constant3.v Line: 47
+    Info (12023): Found entity 2: lpm_constant3 File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_constant3.v Line: 62
 Info (12127): Elaborating entity "multiplicador_combinacional_64bits" for the top level hierarchy
-Error (275051): Bus range for signal "port "data[LPM_SIZE-1..0][LPM_WIDTH-1..0]" (ID LPM_MUX:inst25)" must be a number
-Error (275051): Bus range for signal "port "result[LPM_WIDTH-1..0]" (ID LPM_MUX:inst25)" must be a number
-Error (275051): Bus range for signal "port "data[LPM_SIZE-1..0][LPM_WIDTH-1..0]" (ID LPM_MUX:inst26)" must be a number
-Error (275051): Bus range for signal "port "result[LPM_WIDTH-1..0]" (ID LPM_MUX:inst26)" must be a number
-Error (275051): Bus range for signal "port "data[LPM_SIZE-1..0][LPM_WIDTH-1..0]" (ID LPM_MUX:inst27)" must be a number
-Error (275051): Bus range for signal "port "result[LPM_WIDTH-1..0]" (ID LPM_MUX:inst27)" must be a number
-Error (275051): Bus range for signal "port "data[LPM_SIZE-1..0][LPM_WIDTH-1..0]" (ID LPM_MUX:inst28)" must be a number
-Error (275051): Bus range for signal "port "result[LPM_WIDTH-1..0]" (ID LPM_MUX:inst28)" must be a number
-Error (275051): Bus range for signal "port "data[LPM_SIZE-1..0][LPM_WIDTH-1..0]" (ID LPM_MUX:inst29)" must be a number
-Error (275051): Bus range for signal "port "result[LPM_WIDTH-1..0]" (ID LPM_MUX:inst29)" must be a number
-Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 11 errors, 1 warning
-    Error: Peak virtual memory: 354 megabytes
-    Error: Processing ended: Mon Nov 28 22:36:07 2022
-    Error: Elapsed time: 00:00:05
-    Error: Total CPU time (on all processors): 00:00:11
+Info (12128): Elaborating entity "lpm_add_sub0" for hierarchy "lpm_add_sub0:inst1"
+Info (12128): Elaborating entity "lpm_add_sub" for hierarchy "lpm_add_sub0:inst1|lpm_add_sub:LPM_ADD_SUB_component" File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_add_sub0.v Line: 70
+Info (12130): Elaborated megafunction instantiation "lpm_add_sub0:inst1|lpm_add_sub:LPM_ADD_SUB_component" File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_add_sub0.v Line: 70
+Info (12133): Instantiated megafunction "lpm_add_sub0:inst1|lpm_add_sub:LPM_ADD_SUB_component" with the following parameter: File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_add_sub0.v Line: 70
+    Info (12134): Parameter "lpm_direction" = "ADD"
+    Info (12134): Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=NO,CIN_USED=NO"
+    Info (12134): Parameter "lpm_representation" = "UNSIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_ADD_SUB"
+    Info (12134): Parameter "lpm_width" = "11"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_39i.tdf
+    Info (12023): Found entity 1: add_sub_39i File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/db/add_sub_39i.tdf Line: 23
+Info (12128): Elaborating entity "add_sub_39i" for hierarchy "lpm_add_sub0:inst1|lpm_add_sub:LPM_ADD_SUB_component|add_sub_39i:auto_generated" File: /opt/intelFPGA/21.1/quartus/libraries/megafunctions/lpm_add_sub.tdf Line: 119
+Info (12128): Elaborating entity "LPM_OR" for hierarchy "LPM_OR:inst22"
+Info (12130): Elaborated megafunction instantiation "LPM_OR:inst22"
+Info (12133): Instantiated megafunction "LPM_OR:inst22" with the following parameter:
+    Info (12134): Parameter "LPM_SIZE" = "63"
+    Info (12134): Parameter "LPM_WIDTH" = "1"
+Info (12128): Elaborating entity "lpm_mux2" for hierarchy "lpm_mux2:inst6"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "lpm_mux2:inst6|lpm_mux:LPM_MUX_component" File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_mux2.v Line: 69
+Info (12130): Elaborated megafunction instantiation "lpm_mux2:inst6|lpm_mux:LPM_MUX_component" File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_mux2.v Line: 69
+Info (12133): Instantiated megafunction "lpm_mux2:inst6|lpm_mux:LPM_MUX_component" with the following parameter: File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_mux2.v Line: 69
+    Info (12134): Parameter "lpm_size" = "2"
+    Info (12134): Parameter "lpm_type" = "LPM_MUX"
+    Info (12134): Parameter "lpm_width" = "11"
+    Info (12134): Parameter "lpm_widths" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_osc.tdf
+    Info (12023): Found entity 1: mux_osc File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/db/mux_osc.tdf Line: 23
+Info (12128): Elaborating entity "mux_osc" for hierarchy "lpm_mux2:inst6|lpm_mux:LPM_MUX_component|mux_osc:auto_generated" File: /opt/intelFPGA/21.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
+Info (12128): Elaborating entity "lpm_constant3" for hierarchy "lpm_constant3:inst32"
+Info (12128): Elaborating entity "lpm_constant3_lpm_constant_d89" for hierarchy "lpm_constant3:inst32|lpm_constant3_lpm_constant_d89:lpm_constant3_lpm_constant_d89_component" File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_constant3.v Line: 71
+Info (12128): Elaborating entity "lpm_mux11" for hierarchy "lpm_mux11:inst5"
+Info (12128): Elaborating entity "lpm_add_sub1" for hierarchy "lpm_add_sub1:inst2"
+Info (12128): Elaborating entity "lpm_add_sub" for hierarchy "lpm_add_sub1:inst2|lpm_add_sub:LPM_ADD_SUB_component" File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_add_sub1.v Line: 66
+Info (12130): Elaborated megafunction instantiation "lpm_add_sub1:inst2|lpm_add_sub:LPM_ADD_SUB_component" File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_add_sub1.v Line: 66
+Info (12133): Instantiated megafunction "lpm_add_sub1:inst2|lpm_add_sub:LPM_ADD_SUB_component" with the following parameter: File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_add_sub1.v Line: 66
+    Info (12134): Parameter "lpm_direction" = "SUB"
+    Info (12134): Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=NO,CIN_USED=NO"
+    Info (12134): Parameter "lpm_representation" = "UNSIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_ADD_SUB"
+    Info (12134): Parameter "lpm_width" = "12"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_arh.tdf
+    Info (12023): Found entity 1: add_sub_arh File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/db/add_sub_arh.tdf Line: 23
+Info (12128): Elaborating entity "add_sub_arh" for hierarchy "lpm_add_sub1:inst2|lpm_add_sub:LPM_ADD_SUB_component|add_sub_arh:auto_generated" File: /opt/intelFPGA/21.1/quartus/libraries/megafunctions/lpm_add_sub.tdf Line: 119
+Info (12128): Elaborating entity "lpm_mux0" for hierarchy "lpm_mux0:inst13"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "lpm_mux0:inst13|lpm_mux:LPM_MUX_component" File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_mux0.v Line: 69
+Info (12130): Elaborated megafunction instantiation "lpm_mux0:inst13|lpm_mux:LPM_MUX_component" File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_mux0.v Line: 69
+Info (12133): Instantiated megafunction "lpm_mux0:inst13|lpm_mux:LPM_MUX_component" with the following parameter: File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_mux0.v Line: 69
+    Info (12134): Parameter "lpm_size" = "2"
+    Info (12134): Parameter "lpm_type" = "LPM_MUX"
+    Info (12134): Parameter "lpm_width" = "12"
+    Info (12134): Parameter "lpm_widths" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_psc.tdf
+    Info (12023): Found entity 1: mux_psc File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/db/mux_psc.tdf Line: 23
+Info (12128): Elaborating entity "mux_psc" for hierarchy "lpm_mux0:inst13|lpm_mux:LPM_MUX_component|mux_psc:auto_generated" File: /opt/intelFPGA/21.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
+Info (12128): Elaborating entity "lpm_mult0" for hierarchy "lpm_mult0:inst28"
+Info (12128): Elaborating entity "lpm_mult" for hierarchy "lpm_mult0:inst28|lpm_mult:lpm_mult_component" File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_mult0.v Line: 60
+Info (12130): Elaborated megafunction instantiation "lpm_mult0:inst28|lpm_mult:lpm_mult_component" File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_mult0.v Line: 60
+Info (12133): Instantiated megafunction "lpm_mult0:inst28|lpm_mult:lpm_mult_component" with the following parameter: File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_mult0.v Line: 60
+    Info (12134): Parameter "lpm_hint" = "MAXIMIZE_SPEED=5"
+    Info (12134): Parameter "lpm_representation" = "UNSIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_MULT"
+    Info (12134): Parameter "lpm_widtha" = "53"
+    Info (12134): Parameter "lpm_widthb" = "53"
+    Info (12134): Parameter "lpm_widthp" = "106"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_chn.tdf
+    Info (12023): Found entity 1: mult_chn File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/db/mult_chn.tdf Line: 31
+Info (12128): Elaborating entity "mult_chn" for hierarchy "lpm_mult0:inst28|lpm_mult:lpm_mult_component|mult_chn:auto_generated" File: /opt/intelFPGA/21.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 377
+Info (12128): Elaborating entity "lpm_constant0" for hierarchy "lpm_constant0:inst30"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "lpm_constant0:inst30|lpm_constant:LPM_CONSTANT_component" File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_constant0.v Line: 49
+Info (12130): Elaborated megafunction instantiation "lpm_constant0:inst30|lpm_constant:LPM_CONSTANT_component" File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_constant0.v Line: 49
+Info (12133): Instantiated megafunction "lpm_constant0:inst30|lpm_constant:LPM_CONSTANT_component" with the following parameter: File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_constant0.v Line: 49
+    Info (12134): Parameter "lpm_cvalue" = "1023"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "LPM_CONSTANT"
+    Info (12134): Parameter "lpm_width" = "12"
+Info (12128): Elaborating entity "lpm_constant2" for hierarchy "lpm_constant2:inst29"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "lpm_constant2:inst29|lpm_constant:LPM_CONSTANT_component" File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_constant2.v Line: 49
+Info (12130): Elaborated megafunction instantiation "lpm_constant2:inst29|lpm_constant:LPM_CONSTANT_component" File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_constant2.v Line: 49
+Info (12133): Instantiated megafunction "lpm_constant2:inst29|lpm_constant:LPM_CONSTANT_component" with the following parameter: File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_constant2.v Line: 49
+    Info (12134): Parameter "lpm_cvalue" = "1022"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "LPM_CONSTANT"
+    Info (12134): Parameter "lpm_width" = "12"
+Info (12128): Elaborating entity "lpm_constant11" for hierarchy "lpm_constant11:inst31"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "lpm_constant11:inst31|lpm_constant:LPM_CONSTANT_component" File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_constant11.v Line: 49
+Info (12130): Elaborated megafunction instantiation "lpm_constant11:inst31|lpm_constant:LPM_CONSTANT_component" File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_constant11.v Line: 49
+Info (12133): Instantiated megafunction "lpm_constant11:inst31|lpm_constant:LPM_CONSTANT_component" with the following parameter: File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_constant11.v Line: 49
+    Info (12134): Parameter "lpm_cvalue" = "2047"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "LPM_CONSTANT"
+    Info (12134): Parameter "lpm_width" = "11"
+Info (12128): Elaborating entity "lpm_mux3" for hierarchy "lpm_mux3:inst25"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "lpm_mux3:inst25|lpm_mux:LPM_MUX_component" File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_mux3.v Line: 69
+Info (12130): Elaborated megafunction instantiation "lpm_mux3:inst25|lpm_mux:LPM_MUX_component" File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_mux3.v Line: 69
+Info (12133): Instantiated megafunction "lpm_mux3:inst25|lpm_mux:LPM_MUX_component" with the following parameter: File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/lpm_mux3.v Line: 69
+    Info (12134): Parameter "lpm_size" = "2"
+    Info (12134): Parameter "lpm_type" = "LPM_MUX"
+    Info (12134): Parameter "lpm_width" = "52"
+    Info (12134): Parameter "lpm_widths" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_tsc.tdf
+    Info (12023): Found entity 1: mux_tsc File: /home/lazk3r/Documents/quartus/multiplicador_combinacional_64bits/db/mux_tsc.tdf Line: 23
+Info (12128): Elaborating entity "mux_tsc" for hierarchy "lpm_mux3:inst25|lpm_mux:LPM_MUX_component|mux_tsc:auto_generated" File: /opt/intelFPGA/21.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
+Info (12128): Elaborating entity "lpm_mux1" for hierarchy "lpm_mux1:inst18"
+Info (13014): Ignored 680 buffer(s)
+    Info (13019): Ignored 680 SOFT buffer(s)
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 594 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 128 input pins
+    Info (21059): Implemented 66 output pins
+    Info (21061): Implemented 382 logic cells
+    Info (21062): Implemented 18 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 423 megabytes
+    Info: Processing ended: Tue Nov 29 16:45:41 2022
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:14
 
 

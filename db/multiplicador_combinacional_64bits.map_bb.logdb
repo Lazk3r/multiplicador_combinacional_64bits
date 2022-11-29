@@ -1,0 +1,10 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,lpm_mult0:inst28|lpm_mult:lpm_mult_component|mult_chn:auto_generated|mac_out18,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,lpm_mult0:inst28|lpm_mult:lpm_mult_component|mult_chn:auto_generated|mac_out12,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,lpm_mult0:inst28|lpm_mult:lpm_mult_component|mult_chn:auto_generated|mac_out16,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,lpm_mult0:inst28|lpm_mult:lpm_mult_component|mult_chn:auto_generated|mac_out10,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,lpm_mult0:inst28|lpm_mult:lpm_mult_component|mult_chn:auto_generated|mac_out6,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,lpm_mult0:inst28|lpm_mult:lpm_mult_component|mult_chn:auto_generated|mac_out14,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,lpm_mult0:inst28|lpm_mult:lpm_mult_component|mult_chn:auto_generated|mac_out4,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,lpm_mult0:inst28|lpm_mult:lpm_mult_component|mult_chn:auto_generated|mac_out8,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,lpm_mult0:inst28|lpm_mult:lpm_mult_component|mult_chn:auto_generated|mac_out2,

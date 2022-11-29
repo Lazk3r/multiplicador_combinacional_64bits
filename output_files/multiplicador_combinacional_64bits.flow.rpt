@@ -1,5 +1,5 @@
 Flow report for multiplicador_combinacional_64bits
-Mon Nov 28 22:36:07 2022
+Tue Nov 29 16:45:41 2022
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -41,22 +41,22 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Flow Failed - Mon Nov 28 22:36:07 2022      ;
+; Flow Status                        ; Successful - Tue Nov 29 16:45:41 2022       ;
 ; Quartus Prime Version              ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                      ; multiplicador_combinacional_64bits          ;
 ; Top-level Entity Name              ; multiplicador_combinacional_64bits          ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE22F17C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 382                                         ;
+;     Total combinational functions  ; 382                                         ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 194                                         ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 18                                          ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+------------------------------------+
 ; Option            ; Setting                            ;
 +-------------------+------------------------------------+
-; Start date & time ; 11/28/2022 22:36:02                ;
+; Start date & time ; 11/29/2022 16:45:34                ;
 ; Main task         ; Compilation                        ;
 ; Revision Name     ; multiplicador_combinacional_64bits ;
 +-------------------+------------------------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 929348526676.166969296201594           ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 929348526676.166975833413234           ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -86,6 +86,18 @@ https://fpgasoftware.intel.com/eula.
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --                                ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --                                ;
+; MISC_FILE                           ; lpm_add_sub0.bsf                       ; --            ; --          ; --                                ;
+; MISC_FILE                           ; lpm_add_sub1.bsf                       ; --            ; --          ; --                                ;
+; MISC_FILE                           ; lpm_mux11.bsf                          ; --            ; --          ; --                                ;
+; MISC_FILE                           ; lpm_mux2.bsf                           ; --            ; --          ; --                                ;
+; MISC_FILE                           ; lpm_mux0.bsf                           ; --            ; --          ; --                                ;
+; MISC_FILE                           ; lpm_mux1.bsf                           ; --            ; --          ; --                                ;
+; MISC_FILE                           ; lpm_mux3.bsf                           ; --            ; --          ; --                                ;
+; MISC_FILE                           ; lpm_mult0.bsf                          ; --            ; --          ; --                                ;
+; MISC_FILE                           ; lpm_constant2.bsf                      ; --            ; --          ; --                                ;
+; MISC_FILE                           ; lpm_constant0.bsf                      ; --            ; --          ; --                                ;
+; MISC_FILE                           ; lpm_constant11.bsf                     ; --            ; --          ; --                                ;
+; MISC_FILE                           ; lpm_constant3.bsf                      ; --            ; --          ; --                                ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --                                ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
@@ -99,8 +111,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:05     ; 1.0                     ; 354 MB              ; 00:00:11                           ;
-; Total                ; 00:00:05     ; --                      ; --                  ; 00:00:11                           ;
+; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 423 MB              ; 00:00:14                           ;
+; Total                ; 00:00:07     ; --                      ; --                  ; 00:00:14                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
